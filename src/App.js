@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import ExpenseItem from'./components/ExpenseItem';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <h1>Hi i'm a react project</h1>
+      <ExpenseItem />
     </div>
   );
 }

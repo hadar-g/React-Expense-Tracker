@@ -1,4 +1,5 @@
-import ExpenseItem from'./components/ExpenseItem';
+import Expenses from'./components/Expenses.js';
+
 
 function App() {
   const expenses = [
@@ -6,16 +7,13 @@ function App() {
     amount: 294.56, 
     date: new Date(2021, 2, 28)
   },
+  {title: 'car',
+  amount: 54.90,
+  date: new Date(2021,3,27)
+  },
   ]
   return (
-    <div>
-      <h1>Hi i'm a react project</h1>
-      <ExpenseItem 
-      title = {expenses[0].title}
-      amount = {expenses[0].amount}
-      date = {expenses[0].date}
-      ></ExpenseItem>
-    </div>
+   <Expenses expenses = {expenses} />
   );
 }
 

@@ -1,6 +1,6 @@
-import Chart from './Chart/Chart'
+import Chart from '../Chart/Chart'
 
-constExpensesChart = props => {
+const ExpensesChart = props => {
 
     const chartDataPoints = [
         {label: 'Jan',  value: 0},
@@ -18,7 +18,7 @@ constExpensesChart = props => {
     ]
 
 
-    for (const expense in props.expenses){
+    for (const expense of props.expenses){
         const  expenseMonth = expense.date.getMonth()
         chartDataPoints[expenseMonth].value += expense.amount 
     }
